@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
@@ -27,7 +27,10 @@ export class WeatherComponent implements OnInit {
   loading = true;
   error: string | null = null;
 
-  constructor(private weatherService: WeatherService) {}
+  constructor(
+    private weatherService: WeatherService,
+    private cdr: ChangeDetectorRef,
+  ) {}
 
   ngOnInit(): void {
     this.loadForecasts();
@@ -40,10 +43,12 @@ export class WeatherComponent implements OnInit {
       next: (data) => {
         this.forecasts = data;
         this.loading = false;
+        this.cdr.detectChanges();
       },
       error: (err) => {
         this.error = 'Failed to load weather data. Please try again later.';
         this.loading = false;
+        this.cdr.detectChanges();
       },
     });
   }
