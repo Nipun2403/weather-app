@@ -1,0 +1,35 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+  gap: 16px;
+}
+
+.error-container {
+  padding: 16px 0;
+}
+
+.weather-table {
+  width: 100%;
+}
+
+.hot-row {
+  background-color: #ffe0e0 !important;
+}
+
+.hot-row td {
+  color: #c62828;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .weather-table {
+    font-size: 13px;
+  }
+
+  .weather-table .mat-mdc-header-cell,
+  .weather-table .mat-mdc-cell {
+    padding: 8px 6px;
+  }
+}
