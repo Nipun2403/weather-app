@@ -47,4 +47,4 @@ https://nipun2403.github.io/weather-app/
 
 ![GitHub Actions Successful Run](output/screenshot-2-actions.png)
 
-![App Running from GitHub Pages](output/screenshot-3-ghpages.png)
+![GitHub Pages Deployment Settings](output/screenshot-3-deployment.png)
