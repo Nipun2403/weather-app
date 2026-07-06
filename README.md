@@ -37,6 +37,14 @@ Run `ng build` to build the project. Artifacts are stored in `dist/`.
 
 The application is automatically deployed to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
-### Deployment URL
+### GitHub Pages Deployment
 
 https://nipun2403.github.io/weather-app/
+
+## Screenshots
+
+![App Running Locally](output/screenshot-1-local.png)
+
+![GitHub Actions Successful Run](output/screenshot-2-actions.png)
+
+![App Running from GitHub Pages](output/screenshot-3-ghpages.png)
